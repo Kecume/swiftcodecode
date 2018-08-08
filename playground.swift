@@ -660,6 +660,72 @@ var magazines = ["I": "IdN", "M": "Milk", "T": "The Little Things"]
 for (magazineCode, magazineName) in magazines {
     print("\(magazineCode): \(magazineName)")
 
+    
+    
+func sayHello(personName: String) -> String {
+   let greeting = "Hello, " + personName + "!"
+   return greeting
+}
+print(sayHello(personName: "James"))
+
+
+var shoppingList = ["Syrup", "Milk"]
+print("Before: \(shoppingList)")
+shoppingList.remove(at:0)
+print("After: \(shoppingList)")
+
+
+var book = ["Idn", "Milk", "CA"]
+for (index, value) in book.enumerated() {
+    print("Item \(index + 1): \(value)")
+}
+
+var airports = ["TOR": "Toronto", "NY": "NY Airport"]
+print("Before: \(airports)")
+airports.updateValue("New York", forKey: "NY")
+print("After: \(airports)")
+    
    
    
-   
+
+    
+    
+    
+    
+func sayHello(personName: String) -> String {
+   let greeting = "Hello, " + personName + "!"
+   return greeting
+}
+print(sayHello(personName: "David"))
+print(sayHello(personName: "Victor"))
+
+
+
+
+
+
+func selfIntroduction(driveTime: String) -> String {
+   let sayHi = "Hello, I usually arrive at Airbnb about" + driveTime + "!"
+   return sayHi
+}
+print(selfIntroduction(driveTime: "five minutes"))
+
+func sayHello(personName: String) -> String {
+   let greeting = "Hello, " + personName + "!"
+   return greeting
+}
+print(sayHello(personName: "David"))
+print(sayHello(personName: "Victor"))
+
+
+
+
+
+
+func selfIntroduction(driveTime: String) -> String {
+   let sayHi = "Hello, I usually arrive at Airbnb about" + driveTime + "!"
+   return sayHi
+}
+print(selfIntroduction(driveTime: "five minutes"))
+
+
