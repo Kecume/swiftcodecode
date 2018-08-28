@@ -679,3 +679,16 @@ func mySpeech(brideName: String) -> String {
 print(mySpeech(brideName: "Monica"))
   
    
+
+    
+    
+    func rangeLength(start: Int, end: Int) -> Int {
+   return end - start
+}
+print(rangeLength(start: 2, end: 7))
+// prints "5"
+
+func mySonAge(myAge: Int, notPregnantYear: Int) -> Int {
+    return myAge - notPregnantYear
+}
+print(mySonAge(myAge: 40, notPregnantYear: 30))
