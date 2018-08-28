@@ -661,5 +661,21 @@ for (magazineCode, magazineName) in magazines {
     print("\(magazineCode): \(magazineName)")
 
    
-   
+ func sayHello(personName: String) -> String {
+   let greeting = "Hello, " + personName + "!"
+   return greeting
+}
+print(sayHello(personName: "James"))
+
+    
+    
+    
+
+func mySpeech(brideName: String) -> String {
+    let myGreeting = "Here I want to congrate my best friend, " + brideName + "!"
+    return myGreeting
+}
+
+print(mySpeech(brideName: "Monica"))
+  
    
