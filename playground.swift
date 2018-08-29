@@ -692,3 +692,20 @@ func mySonAge(myAge: Int, notPregnantYear: Int) -> Int {
     return myAge - notPregnantYear
 }
 print(mySonAge(myAge: 40, notPregnantYear: 30))
+    
+    
+
+    
+    
+func sayHelloWorld() -> String {
+   return "Hello, world"
+}
+print(sayHelloWorld())
+
+
+
+
+func wayToInc() -> String {
+    return "Go take a uber!"
+}
+print(wayToInc())
