@@ -709,3 +709,22 @@ func wayToInc() -> String {
     return "Go take a uber!"
 }
 print(wayToInc())
+    
+    
+    
+    
+    
+func sayHi(name: String) {
+   print("Hi, \(name)!")
+}
+sayHi(name: "Dave")
+// prints "Hi, Dave!"
+
+
+
+
+func selfIntroduction(thing: String) {
+   print("I have a " + thing + "!")
+}
+selfIntroduction(thing: "dog")
+// prints I have a dog!    
