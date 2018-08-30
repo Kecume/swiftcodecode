@@ -728,3 +728,83 @@ func selfIntroduction(thing: String) {
 }
 selfIntroduction(thing: "dog")
 // prints I have a dog!    
+
+    
+    
+    
+ func minMax(array: [Int]) -> (min: Int, max: Int) {
+   var currMin = array[0]
+   var currMax = array[0]
+   for value in array[1..<array.count] {
+      if value < currMin {
+        currMin = value
+      } else if value > currMax {
+         currMax = value
+      }
+   }
+  return (currMin, currMax)
+}
+print(minMax(array: [1, 2, 3, 4, -6, 11]))
+
+    
+    
+    
+    
+    
+func evenOdd(array: [Int]) -> (even: Int, odd: Int) {
+    var currEven = array[0]
+    var currOdd = array[0]
+    for value in array[1..<array.count] {
+        if value % 2 == 0 {
+        currEven = value
+    } else if value % 2 != 0 {
+        currOdd = value
+    }
+  }
+  return (currEven, currOdd) 
+}
+
+print(evenOdd(array: [9,2,8,21]))
+
+    
+    
+    
+    
+func minMax(array: [Int]) -> (min: Int, max: Int) {
+   var currMin = array[0]
+   var currMax = array[0]
+   for value in array[1..<array.count] {
+      if value < currMin {
+        currMin = value
+      } else if value > currMax {
+         currMax = value
+      }
+   }
+  return (currMin, currMax)
+}
+let bounds = minMax(array: [4, -4, 1, 88, 7, 42])
+print("min is \(bounds.min) and max is \(bounds.max)")
+
+
+
+
+
+
+
+func evenOdd(array: [Int]) -> (even: Int, odd: Int) {
+    var currEven = array[0]
+    var currOdd = array[0]
+    for value in array[1..<array.count] {
+        if value % 2 == 0 {
+        currEven = value
+    } else if value % 2 != 0 {
+        currOdd = value
+    }
+  }
+  return (currEven, currOdd) 
+}
+let shortCut = evenOdd(array: [9,2,8,21])
+print("Even is \(shortCut.even) and Odd is \(shortCut.odd)")
+
+
+     
