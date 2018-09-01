@@ -821,4 +821,56 @@ func lines(to e1: String, and e2: String) -> String {
     return "Good evening " + "\(e1) and \(e2)!"
 }
 print(lines(to: "ladies", and: "Gentelmen"))
+    
+    
+    
+    
+
+    
+    
+func someFunction(p1: Int = 12) {
+   print("argument value is \(p1)")
+}
+someFunction(p1: 6) // p1 is 6
+someFunction() // p1 is 12
+
+
+
+
+
+
+func myFunction(e: Int = 30) {
+    print("The argument value of myFunction is \(e)")
+}
+myFunction()
+myFunction(e: 28)
+    
+    
+    
+    
+    
+    
+    
+    
+func arithmeticMean(numbers: Double...) -> Double {
+   var total: Double = 0
+   for number in numbers {
+     total += number
+   }
+   return (total / Double(numbers.count))
+}
+print(arithmeticMean(numbers: 3.3, 4.4, 6.6))
+
+
+
+
+func algorithmExample(numbers: Double...) -> Double {
+    var abc: Double = 0
+    for number in numbers {
+        abc += number
+    }
+    return (abc / Double(numbers.count))
+}
+print(algorithmExample(numbers: 2.5678, 4.45, 9.123))
+
      
