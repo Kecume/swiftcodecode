@@ -807,4 +807,18 @@ let shortCut = evenOdd(array: [9,2,8,21])
 print("Even is \(shortCut.even) and Odd is \(shortCut.odd)")
 
 
+
+    
+    
+    
+func sayHello(to p1: String, and p2: String) -> String {
+   return "Hello \(p1) and \(p2)!"
+}
+print(sayHello(to: "Tom", and: "Jerry"))
+// prints "Hello Tom and Jerry!"
+
+func lines(to e1: String, and e2: String) -> String {
+    return "Good evening " + "\(e1) and \(e2)!"
+}
+print(lines(to: "ladies", and: "Gentelmen"))
      
