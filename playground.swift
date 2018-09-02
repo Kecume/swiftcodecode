@@ -874,3 +874,33 @@ func algorithmExample(numbers: Double...) -> Double {
 print(algorithmExample(numbers: 2.5678, 4.45, 9.123))
 
      
+
+    
+    
+    
+    
+func swapInts(a: inout Int, b: inout Int) {
+   let tempA = a
+   a = b
+   b = tempA
+}
+var a = 5
+var b = 6
+print("Before swap: a is \(a) and b is \(b)")
+swapInts(a: &a, b: &b)
+print("After swap: a is \(a) and b is \(b)")
+
+
+
+
+
+func exchangeName(one: inout String, two: inout String) {
+    let temp1 = one
+    one = two
+    two = temp1
+}
+var one = "Jack"
+var two = "Tim"
+print("Before exchange: one is \(one) and two is \(two)")
+exchangeName(one: &one, two: &two)
+print("After exchange: one is \(one) and two is \(two)")    
