@@ -1007,4 +1007,63 @@ printWalkAway()
     
     
     
+    
+    
+    
+    
+    
+func addInts(a: Int, b: Int) -> Int {
+   return a + b
+}
+var mathFunction: (Int, Int) -> Int = addInts
+
+print(mathFunction(5, 6))
+
+
+
+
+
+
+
+func minusInts(itemA: Int, itemB: Int) -> Int {
+    return itemA - itemB
+}
+var minusFunction: (Int, Int) -> Int = minusInts
+
+print(minusFunction(8, 12))
+
+
+
+
+
+
+
+func breakfastList(no1: String, no2: String) -> String {
+    return "Today I have \(no1) and \(no2) for breakfast!"
+}
+var myBreakfast: (String, String) -> String = breakfastList
+
+print(myBreakfast("Milk", "Break"))
+
+
+
+
+
+
+
+func breakfastList1(no11: String, no22: String) -> String {
+    return "Today I have \(no11) and \(no22) for breakfast!"
+}
+
+
+var no11 = "milk"
+var no22 = "egg"
+
+print(breakfastList1(no11: "Milk", no22: "Egg"))
+
+
+
+
+
+
  
