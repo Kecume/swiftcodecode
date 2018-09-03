@@ -1066,4 +1066,17 @@ print(breakfastList1(no11: "Milk", no22: "Egg"))
 
 
 
- 
+func addInts(a: Int, b: Int) -> Int {
+   return a + b
+}
+var mathFunction: (Int, Int) -> Int = addInts
+print("Result: \(mathFunction(2, 3))")
+
+
+
+
+func timesInts(a: Int, b: Int) -> Int {
+    return a * b
+}
+var timesFunction: (Int, Int) -> Int = timesInts
+print("Result: \(timesFunction(5, 11))") 
