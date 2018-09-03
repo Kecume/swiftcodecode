@@ -904,3 +904,107 @@ var two = "Tim"
 print("Before exchange: one is \(one) and two is \(two)")
 exchangeName(one: &one, two: &two)
 print("After exchange: one is \(one) and two is \(two)")    
+    
+    
+    
+    
+    
+    
+func swapInts(a: inout Int, b: inout Int) {
+   let tempA = a
+   a = b
+   b = tempA
+}
+var a = 5
+var b = 6
+print("Before swap: a is \(a) and b is \(b)")
+swapInts(a: &a, b: &b)
+print("After swap: a is \(a) and b is \(b)")
+
+
+
+
+
+    
+    
+func exchangeName(one: inout String, two: inout String, three: inout String) {
+    let temp1 = one
+    one = two
+    two = temp1
+    two = three 
+    three = temp1
+}
+var one = "Jack"
+var two = "Tim"
+var three = "Rose"
+print("Before exchange: one is \(one) and two is \(two) and three is \(three)")
+exchangeName(one: &one, two: &two, three: &three)
+print("After exchange: one is \(one) and two is \(two) and three is \(three)")
+    
+    
+
+    
+    
+    
+    
+ 
+func swapTwoInts(someInt: inout Int, anotherInt: inout Int) {
+    let temp2 = someInt
+    someInt = anotherInt
+    anotherInt = temp2
+}
+var someInt = 3
+var anotherInt = 107
+print("someInt is \(someInt), anotherInt is \(anotherInt)")
+swapTwoInts(someInt: &someInt, anotherInt: &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")   
+    
+ 
+
+    
+
+    
+    
+func addInts(a: Int, b: Int) -> Int {
+   return a + b
+}
+func multiplyInts(a: Int, b: Int) -> Int {
+   return a * b
+}
+
+
+func minusInt(a: Int, b: Int) -> Int {
+    return a - b
+}
+
+func divideInt(a: Int, b: Int) -> Int {
+    return a / b
+}
+
+print(addInts(a: 4, b: 5))
+print(multiplyInts(a: 4, b: 5))
+print(minusInt(a: 4, b: 5))
+print(divideInt(a: 4, b: 5))
+    
+    
+    
+  
+    
+    
+    
+func printHelloWorld() {
+   print("Hello, world")
+}
+printHelloWorld()
+
+
+
+func printWalkAway() {
+    print("Walk away, dude!")
+}
+printWalkAway()
+    
+    
+    
+    
+ 
