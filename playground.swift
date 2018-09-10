@@ -1080,3 +1080,40 @@ func timesInts(a: Int, b: Int) -> Int {
 }
 var timesFunction: (Int, Int) -> Int = timesInts
 print("Result: \(timesFunction(5, 11))") 
+    
+    
+    
+    
+
+func addInts(a: Int, b: Int) -> Int {
+   return a + b
+}
+var mathFunction: (Int, Int) -> Int = addInts
+
+print(mathFunction(5, 6))
+
+
+
+
+
+
+func shoppingList(c: String, d: String) -> String {
+    return "I have bought \(c) and \(d) today!"
+}
+
+var myList: (String, String) -> String = shoppingList
+
+print(myList("apple", "orange"))
+
+    
+    
+    
+func minusInts(c: Int, d: Int) -> Int {
+    return c - d
+}
+
+func printFinalResult(minusFunc: (Int, Int) -> Int, c: Int, d: Int) {
+    print("Result: \(minusFunc(c,d))")
+}
+
+printFinalResult(minusFunc: minusInts, c: 9, d: 3)    
