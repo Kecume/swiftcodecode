@@ -1116,4 +1116,10 @@ func printFinalResult(minusFunc: (Int, Int) -> Int, c: Int, d: Int) {
     print("Result: \(minusFunc(c,d))")
 }
 
-printFinalResult(minusFunc: minusInts, c: 9, d: 3)    
+printFinalResult(minusFunc: minusInts, c: 9, d: 3)  
+    
+    
+    
+    
+    
+
